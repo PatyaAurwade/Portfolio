@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="Stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3007504a65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </ul>   
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Pratik</span><br> Aurwade From India </h1>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="column1">
+                    <img src="images/img1.jpg" >
+                </div>
+                <div class="column2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-info">I'm Pratik Aurwade , currently pursuing a Master of Computer Applications (MCA) degree while honing my skills as a front-end developer. Passionate about crafting engaging user experiences, I thrive on turning ideas into intuitive interfaces. With a keen eye for design and a love for coding, I'm on a mission to create innovative solutions that make a difference. Let's collaborate and build something extraordinary together!</p>
+
+                    <div class="tab-titles">
+                        <p  class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Front-end Developer</span><br>Front-end Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span>No Experience<br></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>HSC from DKTE Ichalkaranji</li>
+                            <li><span>2023</span><br>BCS from KWC Sangli</li>
+                            <li><span>Post Graducation(MCA)</span><br>  Maharashtra Institute of Technnology Wpu Pune</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<script>
+    window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<!---------------------------------Services---------------------------------------------------
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, corrupti.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officia?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, perferendis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officia?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, unde.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+>
+
+<!-------------------Projects--------------------------------->
+<div id ="projects">
+    <div class="container3">
+        <h1 style="color: white; margin-top: 0px;"  class="sub-title1">My Work</h1>
+        <div class="project-list">
+            <div class="projects">
+                <img src="images/Project1.png.jpg">
+                <div class="layer">
+                    <h3>Lane Detection</h3>
+                    <p>I make lane Detection App for enhanceing my knowdlege in Python</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="images/Project2.png">
+                <div class="layer">
+                    <h3>Scientific Calculator</h3>
+                    <p>I make Scientific Calculator for enhanceing my knowdlege in java</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="images/Project3.png">
+                <div class="layer">
+                    <h3>Online Gaming Esports Tournament System</h3>
+                    <p>I make Online Gaming Esports Tournament System Website for enhanceing my knowdlege in HTML and CSS and Java Script</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------------------------Contact----------------------------------->
+<div id="contact" >
+    <div class="container4" >
+        <div class="row1" >
+            <div class="contact-left" >
+                <h1  class="sub-title2">Contact Me</h1>
+                <p class="gmail"><i class="fa-solid fa-paper-plane"></i> pratikaurwade28@gamil.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 7498681513</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pratik-aurwade-032a09226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/PatyaAurwade"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/pratik.aurwade/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Resume.pdf" download class="btn btn2 cv">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="copyright">
+    <p> Copyright © Pratik. Made with   <i class="fa-solid fa-heart"></i></p>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz11lNop_JA4U82HBV5rZ2Xylj6Pm4qcXidHQdyI7JxXagKDsq6Et4tLTYgD__vUJMv/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
